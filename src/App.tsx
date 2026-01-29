@@ -19,7 +19,7 @@ export interface Project {
 }
 
 const App = () => {
-  const lenis = useLenis((lenis) => {
+  useLenis(() => {
     // console.log(lenis)
   })
 

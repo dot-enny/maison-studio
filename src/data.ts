@@ -58,7 +58,7 @@ const PROJECTS: Project[] = [
     client: "Mono Tech",
     category: "SaaS Platform",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1614064641938-3e8489eb536a?q=80&w=2670&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=2632&auto=format&fit=crop",
     speed: 0.04,
     alignment: "col-span-12 md:col-span-6 md:col-start-7 md:-mt-12",
     aspect: "aspect-video"

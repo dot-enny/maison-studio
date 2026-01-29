@@ -32,8 +32,8 @@ export const SelectedWork: React.FC = () => (
          Gap-y-32 ensures massive vertical whitespace.
       */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-32 w-full">
-        {PROJECTS.map((project, index) => (
-          <WorkItem key={project.id} project={project} index={index} />
+        {PROJECTS.map((project) => (
+          <WorkItem key={project.id} project={project} />
         ))}
       </div>
     </div>

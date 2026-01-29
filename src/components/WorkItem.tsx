@@ -5,7 +5,6 @@ import type { Project } from "../App";
 
 interface WorkItemProps {
   project: Project;
-  index: number;
 }
 
 const imageReveal = {
@@ -14,7 +13,7 @@ const imageReveal = {
   transition: { duration: 1.2, ease: "easeOut" }
 };
 
-export const WorkItem: React.FC<WorkItemProps> = ({ project, index }) => {
+export const WorkItem: React.FC<WorkItemProps> = ({ project }) => {
   const ref = useRef(null);
   
   // Create relative scroll timeline for this specific element
@@ -63,7 +62,7 @@ export const WorkItem: React.FC<WorkItemProps> = ({ project, index }) => {
           
           <div className="absolute inset-0 bg-neutral-900/0 group-hover:bg-neutral-900/10 transition-colors duration-500" />
           
-          <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex justify-between items-end bg-gradient-to-t from-black/60 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex justify-between items-end bg-linear-to-t from-black/60 to-transparent text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             <div>
               <p className="text-xs font-medium uppercase tracking-wider mb-2 opacity-80">{project.category}</p>
               <h3 className="text-2xl md:text-3xl font-serif italic">{project.client}</h3>
